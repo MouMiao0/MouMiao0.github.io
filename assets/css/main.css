@@ -1,11 +1,11 @@
 body {
-    background-image: url(../../images/bg.jpg);
+    background-image:linear-gradient(90deg,#843c58,#004466);
     background-repeat:no-repeat;
     background-attachment:fixed;
 }
 
 header{
-    background-image:linear-gradient(90deg,#843c58,#004466)
+
 }
 
 header .btn{
