@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
-<body>
-<header class="container-fluid ">
-    <div class="row row-cols-3 row-cols-md-5">
+<body >
+<header id="header" class="container-fluid ">
+    <div class="row row-cols-4 ">
         <div class="col">
             <q></q>
-            <img id="headerImg" class="rounded-circle" src="http://q1.qlogo.cn/g?b=qq&nk=1606958950&s=640" alt="头像">
+            <img id="headerImg" class="rounded-circle img-thumbnail " src="http://q1.qlogo.cn/g?b=qq&nk=1606958950&s=640" alt="头像">
         </div>
         <div class="col">
             <a href="" class="btn">个人简介</a>
@@ -36,56 +36,55 @@
         <div id="contact" class="col">
             <a href="" class="btn">联系方式</a>
         </div>
-        <div id="search" class="col">
-            <form>
-                <input type="text" id="search-bar" name="context">
-                <a class="btn" onclick="">搜索</a>
-            </form>
-        </div>
     </div>
 </header>
 
-<div id="listMenu" class="row col-md-2">
-    <div class="row">
-        <ul class="col-10">
-            <li><a href="#%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84">&#x76EE;&#x5F55;&#x7ED3;&#x6784;</a></li>
-            <li><a href="#%E6%9E%B6%E6%9E%84">&#x67B6;&#x6784;</a>
-                <ul>
-                    <li><a href="#%E8%AF%B7%E6%B1%82%E6%B5%81%E7%A8%8B">&#x8BF7;&#x6C42;&#x6D41;&#x7A0B;</a></li>
-                </ul>
-            </li>
-            <li><a href="#%E8%A7%86%E5%9B%BE">&#x89C6;&#x56FE;</a>
-                <ul>
-                    <li>
-                        <a href="#%E8%A7%86%E5%9B%BE%E9%80%9A%E8%BF%87-thinkview-%E9%85%8D%E5%90%88%E8%A7%86%E5%9B%BE%E9%A9%B1%E5%8A%A8%E4%B8%80%E8%B5%B7%E5%AE%8C%E6%88%90%E4%BD%86thinkphp%E5%8F%AA%E6%9C%89%E5%8E%9F%E7%94%9Fphp%E6%A8%A1%E6%9D%BF%E6%95%85%E8%A6%81%E9%80%9A%E8%BF%87composer%E6%B7%BB%E5%8A%A0%E6%A8%A1%E6%9D%BF%E9%A9%B1%E5%8A%A8">&#x89C6;&#x56FE;&#x901A;&#x8FC7;
-                            <code>think\View</code>&#x914D;&#x5408;&#x89C6;&#x56FE;&#x9A71;&#x52A8;&#x4E00;&#x8D77;&#x5B8C;&#x6210;&#xFF0C;&#x4F46;thinkPHP&#x53EA;&#x6709;&#x539F;&#x751F;PHP&#x6A21;&#x677F;&#xFF0C;&#x6545;&#x8981;&#x901A;&#x8FC7;composer&#x6DFB;&#x52A0;&#x6A21;&#x677F;&#x9A71;&#x52A8;</a>
-                    </li>
-                </ul>
-            </li>
-            <li><a href="#%E6%8E%A7%E5%88%B6%E5%99%A8">&#x63A7;&#x5236;&#x5668;</a>
-                <ul>
-                    <li><a href="#%E5%8D%95%E5%BA%94%E7%94%A8">&#x5355;&#x5E94;&#x7528;</a></li>
-                </ul>
-            </li>
-            <li><a href="#%E8%AF%B7%E6%B1%82">&#x8BF7;&#x6C42;</a></li>
-            <li><a href="#%E6%A8%A1%E5%9E%8B">&#x6A21;&#x578B;</a></li>
-            <li><a href="#%E6%95%B0%E6%8D%AE%E5%BA%93">&#x6570;&#x636E;&#x5E93;</a>
-                <ul>
-                    <li>
-                        <a href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C">&#x6570;&#x636E;&#x5E93;&#x64CD;&#x4F5C;</a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-        <a id="listBtn" class="btn btn-info col-2" onclick="">&rsaquo;</a>
+<div id="context" class="row ">
+
+    <div id="listMenu" class="row col-md-3">
+        <div class="row row-cols-10 row-cols-md-1">
+			<div class="col-9">
+				<ul id="menu">
+					<li><a href="#%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84">&#x76EE;&#x5F55;&#x7ED3;&#x6784;</a></li>
+					<li><a href="#%E6%9E%B6%E6%9E%84">&#x67B6;&#x6784;</a>
+						<ul>
+							<li><a href="#%E8%AF%B7%E6%B1%82%E6%B5%81%E7%A8%8B">&#x8BF7;&#x6C42;&#x6D41;&#x7A0B;</a>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#%E8%A7%86%E5%9B%BE">&#x89C6;&#x56FE;</a>
+						<ul>
+							<li>
+								<a href="#%E8%A7%86%E5%9B%BE%E9%80%9A%E8%BF%87-thinkview-%E9%85%8D%E5%90%88%E8%A7%86%E5%9B%BE%E9%A9%B1%E5%8A%A8%E4%B8%80%E8%B5%B7%E5%AE%8C%E6%88%90%E4%BD%86thinkphp%E5%8F%AA%E6%9C%89%E5%8E%9F%E7%94%9Fphp%E6%A8%A1%E6%9D%BF%E6%95%85%E8%A6%81%E9%80%9A%E8%BF%87composer%E6%B7%BB%E5%8A%A0%E6%A8%A1%E6%9D%BF%E9%A9%B1%E5%8A%A8">&#x89C6;&#x56FE;&#x901A;&#x8FC7;
+									<code>think\View</code>&#x914D;&#x5408;&#x89C6;&#x56FE;&#x9A71;&#x52A8;&#x4E00;&#x8D77;&#x5B8C;&#x6210;&#xFF0C;&#x4F46;thinkPHP&#x53EA;&#x6709;&#x539F;&#x751F;PHP&#x6A21;&#x677F;&#xFF0C;&#x6545;&#x8981;&#x901A;&#x8FC7;composer&#x6DFB;&#x52A0;&#x6A21;&#x677F;&#x9A71;&#x52A8;</a>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#%E6%8E%A7%E5%88%B6%E5%99%A8">&#x63A7;&#x5236;&#x5668;</a>
+						<ul>
+							<li><a href="#%E5%8D%95%E5%BA%94%E7%94%A8">&#x5355;&#x5E94;&#x7528;</a></li>
+						</ul>
+					</li>
+					<li><a href="#%E8%AF%B7%E6%B1%82">&#x8BF7;&#x6C42;</a></li>
+					<li><a href="#%E6%A8%A1%E5%9E%8B">&#x6A21;&#x578B;</a></li>
+					<li><a href="#%E6%95%B0%E6%8D%AE%E5%BA%93">&#x6570;&#x636E;&#x5E93;</a>
+						<ul>
+							<li>
+								<a href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C">&#x6570;&#x636E;&#x5E93;&#x64CD;&#x4F5C;</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+            <a id="listBtn" class="btn btn-info col-1"><p>&rsaquo;</p></a>
+        </div>
     </div>
-</div>
 
-<div class="mume markdown-preview  ">
+    <div class="col-md-9 mume markdown-preview  ">
 
-    <h2 class="mume-header" id="%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84">&#x76EE;&#x5F55;&#x7ED3;&#x6784;</h2>
+        <h2 class="mume-header" id="%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84">&#x76EE;&#x5F55;&#x7ED3;&#x6784;</h2>
 
-    <pre class="language-text">www  WEB&#x90E8;&#x7F72;&#x76EE;&#x5F55;&#xFF08;&#x6216;&#x8005;&#x5B50;&#x76EE;&#x5F55;&#xFF09;
+        <pre class="language-text">www  WEB&#x90E8;&#x7F72;&#x76EE;&#x5F55;&#xFF08;&#x6216;&#x8005;&#x5B50;&#x76EE;&#x5F55;&#xFF09;
 &#x251C;&#x2500;app           &#x5E94;&#x7528;&#x76EE;&#x5F55;
 &#x2502;  &#x251C;&#x2500;app_name           &#x5E94;&#x7528;&#x76EE;&#x5F55;
 &#x2502;  &#x2502;  &#x251C;&#x2500;common.php      &#x51FD;&#x6570;&#x6587;&#x4EF6;
@@ -128,11 +127,11 @@
 &#x251C;&#x2500;README.md             README &#x6587;&#x4EF6;
 &#x251C;&#x2500;think                 &#x547D;&#x4EE4;&#x884C;&#x5165;&#x53E3;&#x6587;&#x4EF6;
 </pre>
-    <h2 class="mume-header" id="%E6%9E%B6%E6%9E%84">&#x67B6;&#x6784;</h2>
+        <h2 class="mume-header" id="%E6%9E%B6%E6%9E%84">&#x67B6;&#x6784;</h2>
 
-    <h3 class="mume-header" id="%E8%AF%B7%E6%B1%82%E6%B5%81%E7%A8%8B">&#x8BF7;&#x6C42;&#x6D41;&#x7A0B;</h3>
+        <h3 class="mume-header" id="%E8%AF%B7%E6%B1%82%E6%B5%81%E7%A8%8B">&#x8BF7;&#x6C42;&#x6D41;&#x7A0B;</h3>
 
-    <pre class="language-text">1.&#x8F7D;&#x5165;Composer&#x7684;&#x81EA;&#x52A8;&#x52A0;&#x8F7D;autoload&#x6587;&#x4EF6;&#xFF08;&#x5728;think/vendor&#x4E0B;&#xFF09;
+        <pre class="language-text">1.&#x8F7D;&#x5165;Composer&#x7684;&#x81EA;&#x52A8;&#x52A0;&#x8F7D;autoload&#x6587;&#x4EF6;&#xFF08;&#x5728;think/vendor&#x4E0B;&#xFF09;
 2.&#x5B9E;&#x4F8B;&#x5316;&#x7CFB;&#x7EDF;&#x5E94;&#x7528;&#x57FA;&#x7840;&#x7C7B;think\App
 3.&#x83B7;&#x53D6;&#x5E94;&#x7528;&#x76EE;&#x5F55;&#x7B49;&#x76F8;&#x5173;&#x8DEF;&#x5F84;&#x4FE1;&#x606F;
 4.&#x52A0;&#x8F7D;&#x5168;&#x5C40;&#x7684;&#x670D;&#x52A1;&#x63D0;&#x4F9B;provider.php&#x6587;&#x4EF6;
@@ -172,141 +171,144 @@
 48.&#x6267;&#x884C;&#x4E2D;&#x95F4;&#x4EF6;&#x7684;end&#x56DE;&#x8C03;
 49.&#x5199;&#x5165;&#x5F53;&#x524D;&#x8BF7;&#x6C42;&#x7684;&#x65E5;&#x5FD7;&#x4FE1;&#x606F;
 </pre>
-    <h2 class="mume-header" id="%E8%A7%86%E5%9B%BE">&#x89C6;&#x56FE;</h2>
+        <h2 class="mume-header" id="%E8%A7%86%E5%9B%BE">&#x89C6;&#x56FE;</h2>
 
-    <h3 class="mume-header"
-        id="%E8%A7%86%E5%9B%BE%E9%80%9A%E8%BF%87-thinkview-%E9%85%8D%E5%90%88%E8%A7%86%E5%9B%BE%E9%A9%B1%E5%8A%A8%E4%B8%80%E8%B5%B7%E5%AE%8C%E6%88%90%E4%BD%86thinkphp%E5%8F%AA%E6%9C%89%E5%8E%9F%E7%94%9Fphp%E6%A8%A1%E6%9D%BF%E6%95%85%E8%A6%81%E9%80%9A%E8%BF%87composer%E6%B7%BB%E5%8A%A0%E6%A8%A1%E6%9D%BF%E9%A9%B1%E5%8A%A8">
-        &#x89C6;&#x56FE;&#x901A;&#x8FC7; <code>think\View</code>&#x914D;&#x5408;&#x89C6;&#x56FE;&#x9A71;&#x52A8;&#x4E00;&#x8D77;&#x5B8C;&#x6210;&#xFF0C;&#x4F46;thinkPHP&#x53EA;&#x6709;&#x539F;&#x751F;PHP&#x6A21;&#x677F;&#xFF0C;&#x6545;&#x8981;&#x901A;&#x8FC7;composer&#x6DFB;&#x52A0;&#x6A21;&#x677F;&#x9A71;&#x52A8;
-    </h3>
+        <h3 class="mume-header"
+            id="%E8%A7%86%E5%9B%BE%E9%80%9A%E8%BF%87-thinkview-%E9%85%8D%E5%90%88%E8%A7%86%E5%9B%BE%E9%A9%B1%E5%8A%A8%E4%B8%80%E8%B5%B7%E5%AE%8C%E6%88%90%E4%BD%86thinkphp%E5%8F%AA%E6%9C%89%E5%8E%9F%E7%94%9Fphp%E6%A8%A1%E6%9D%BF%E6%95%85%E8%A6%81%E9%80%9A%E8%BF%87composer%E6%B7%BB%E5%8A%A0%E6%A8%A1%E6%9D%BF%E9%A9%B1%E5%8A%A8">
+            &#x89C6;&#x56FE;&#x901A;&#x8FC7; <code>think\View</code>&#x914D;&#x5408;&#x89C6;&#x56FE;&#x9A71;&#x52A8;&#x4E00;&#x8D77;&#x5B8C;&#x6210;&#xFF0C;&#x4F46;thinkPHP&#x53EA;&#x6709;&#x539F;&#x751F;PHP&#x6A21;&#x677F;&#xFF0C;&#x6545;&#x8981;&#x901A;&#x8FC7;composer&#x6DFB;&#x52A0;&#x6A21;&#x677F;&#x9A71;&#x52A8;
+        </h3>
 
-    <pre data-role="codeBlock" data-info="PHP" class="language-php"> composer <span class="token keyword">require</span> topthink<span
-            class="token operator">/</span>think<span class="token operator">-</span>view
+        <pre data-role="codeBlock" data-info="PHP" class="language-php"> composer <span
+                class="token keyword">require</span> topthink<span
+                class="token operator">/</span>think<span class="token operator">-</span>view
 </pre>
-    <h3 class="mume-header" id></h3>
+        <h3 class="mume-header" id></h3>
 
-    <p>
-        &#x5B89;&#x88C5;&#x597D;&#x6A21;&#x677F;&#x540E;&#x901A;&#x8FC7;&#x4F7F;&#x7528;&#x52A9;&#x624B;&#x51FD;&#x6570;<code>view()</code>&#x8C03;&#x7528;&#x6A21;&#x677F;<br>
-        &#x51FD;&#x6570;&#x4F7F;&#x7528;&#x65B9;&#x6CD5; :</p>
-    <pre data-role="codeBlock" data-info="PHP" class="language-php"> <span class="token doc-comment comment">/**
+        <p>
+            &#x5B89;&#x88C5;&#x597D;&#x6A21;&#x677F;&#x540E;&#x901A;&#x8FC7;&#x4F7F;&#x7528;&#x52A9;&#x624B;&#x51FD;&#x6570;<code>view()</code>&#x8C03;&#x7528;&#x6A21;&#x677F;<br>
+            &#x51FD;&#x6570;&#x4F7F;&#x7528;&#x65B9;&#x6CD5; :</p>
+        <pre data-role="codeBlock" data-info="PHP" class="language-php"> <span class="token doc-comment comment">/**
      * &#x6E32;&#x67D3;&#x6A21;&#x677F;&#x8F93;&#x51FA;
      * <span class="token keyword">@param</span> <span class="token class-name"><span
-                class="token keyword">string</span></span>   <span class="token parameter">$template</span> &#x6A21;&#x677F;&#x6587;&#x4EF6;
+                    class="token keyword">string</span></span>   <span class="token parameter">$template</span> &#x6A21;&#x677F;&#x6587;&#x4EF6;
      * <span class="token keyword">@param</span> <span class="token class-name"><span class="token keyword">array</span></span>    <span
-                class="token parameter">$vars</span>     &#x6A21;&#x677F;&#x53D8;&#x91CF;
+                    class="token parameter">$vars</span>     &#x6A21;&#x677F;&#x53D8;&#x91CF;
      * <span class="token keyword">@param</span> <span class="token class-name"><span
-                class="token keyword">int</span></span>      <span class="token parameter">$code</span>     &#x72B6;&#x6001;&#x7801;
+                    class="token keyword">int</span></span>      <span class="token parameter">$code</span>     &#x72B6;&#x6001;&#x7801;
      * <span class="token keyword">@param</span> <span class="token class-name">callable</span> <span
-                class="token parameter">$filter</span>   &#x5185;&#x5BB9;&#x8FC7;&#x6EE4;
+                    class="token parameter">$filter</span>   &#x5185;&#x5BB9;&#x8FC7;&#x6EE4;
      * <span class="token keyword">@return</span> <span class="token class-name"><span
-                class="token punctuation">\</span>think<span class="token punctuation">\</span>response<span
-                class="token punctuation">\</span>View</span>
+                    class="token punctuation">\</span>think<span class="token punctuation">\</span>response<span
+                    class="token punctuation">\</span>View</span>
      */</span>
 <span class="token keyword">function</span> <span class="token function">view</span><span
-                class="token punctuation">(</span><span class="token keyword type-hint">string</span> <span
-                class="token variable">$template</span> <span class="token operator">=</span> <span
-                class="token string single-quoted-string">&apos;&apos;</span><span
-                class="token punctuation">,</span> <span class="token variable">$vars</span> <span
-                class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span
-                class="token punctuation">,</span> <span class="token variable">$code</span> <span
-                class="token operator">=</span> <span class="token number">200</span><span
-                class="token punctuation">,</span> <span class="token variable">$filter</span> <span
-                class="token operator">=</span> <span class="token constant">null</span><span class="token punctuation">)</span>
+                    class="token punctuation">(</span><span class="token keyword type-hint">string</span> <span
+                    class="token variable">$template</span> <span class="token operator">=</span> <span
+                    class="token string single-quoted-string">&apos;&apos;</span><span
+                    class="token punctuation">,</span> <span class="token variable">$vars</span> <span
+                    class="token operator">=</span> <span class="token punctuation">[</span><span
+                    class="token punctuation">]</span><span
+                    class="token punctuation">,</span> <span class="token variable">$code</span> <span
+                    class="token operator">=</span> <span class="token number">200</span><span
+                    class="token punctuation">,</span> <span class="token variable">$filter</span> <span
+                    class="token operator">=</span> <span class="token constant">null</span><span
+                    class="token punctuation">)</span>
 </pre>
-    <h2 class="mume-header" id="%E6%8E%A7%E5%88%B6%E5%99%A8">&#x63A7;&#x5236;&#x5668;</h2>
+        <h2 class="mume-header" id="%E6%8E%A7%E5%88%B6%E5%99%A8">&#x63A7;&#x5236;&#x5668;</h2>
 
-    <h3 class="mume-header" id="%E5%8D%95%E5%BA%94%E7%94%A8">&#x5355;&#x5E94;&#x7528;</h3>
+        <h3 class="mume-header" id="%E5%8D%95%E5%BA%94%E7%94%A8">&#x5355;&#x5E94;&#x7528;</h3>
 
-    <p>&#x5728; <code>app\controller</code> &#x4E0B;&#x521B;&#x5EFA;&#x63A7;&#x5236;&#x5668;</p>
-    <h2 class="mume-header" id="%E8%AF%B7%E6%B1%82">&#x8BF7;&#x6C42;</h2>
+        <p>&#x5728; <code>app\controller</code> &#x4E0B;&#x521B;&#x5EFA;&#x63A7;&#x5236;&#x5668;</p>
+        <h2 class="mume-header" id="%E8%AF%B7%E6%B1%82">&#x8BF7;&#x6C42;</h2>
 
-    <p>&#x901A;&#x8FC7; <code>Request $request</code>&#x53D8;&#x91CF;&#x83B7;&#x53D6;&#x8BF7;&#x6C42;<br>
-        &#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x52A9;&#x624B;&#x51FD;&#x6570; <code>request()</code>&#x83B7;&#x53D6;&#x8BF7;&#x6C42;
-    </p>
-    <h2 class="mume-header" id="%E6%A8%A1%E5%9E%8B">&#x6A21;&#x578B;</h2>
+        <p>&#x901A;&#x8FC7; <code>Request $request</code>&#x53D8;&#x91CF;&#x83B7;&#x53D6;&#x8BF7;&#x6C42;<br>
+            &#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x52A9;&#x624B;&#x51FD;&#x6570; <code>request()</code>&#x83B7;&#x53D6;&#x8BF7;&#x6C42;
+        </p>
+        <h2 class="mume-header" id="%E6%A8%A1%E5%9E%8B">&#x6A21;&#x578B;</h2>
 
-    <p>&#x5728; <code>app\model</code> &#x521B;&#x5EFA;&#x7EE7;&#x627F; <code>think.Model</code>&#x7684;&#x7C7B;&#x521B;&#x5EFA;<br>
-        &#x6A21;&#x578B;&#x5FC5;&#x987B;&#x5728;&#x6570;&#x636E;&#x5E93;&#x6709;&#x5BF9;&#x5E94;&#x7684;&#x8868;&#xFF0C;&#x4E14;&#x6A21;&#x578B;&#x7C7B;&#x8981;&#x4F7F;&#x7528;&#x9A7C;&#x5CF0;&#x547D;&#x540D;&#x6CD5;&#xFF0C;&#x4EE5;&#x786E;&#x4FDD;&#x80FD;&#x627E;&#x5230;&#x5BF9;&#x5E94;&#x7684;&#x8868;
-    </p>
-    <table>
-        <thead>
-        <tr>
-            <th style="text-align:left">&#x6A21;&#x578B;&#x540D;</th>
-            <th>&#x7EA6;&#x5B9A;&#x5BF9;&#x5E94;&#x6570;&#x636E;&#x8868;&#xFF08;&#x5047;&#x8BBE;&#x6570;&#x636E;&#x5E93;&#x7684;&#x524D;&#x7F00;&#x5B9A;&#x4E49;&#x662F;
-                think_&#xFF09;
-            </th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td style="text-align:left">User</td>
-            <td>think_user</td>
-        </tr>
-        <tr>
-            <td style="text-align:left">UserType</td>
-            <td>think_user_type</td>
-        </tr>
-        </tbody>
-    </table>
-    <h2 class="mume-header" id="%E6%95%B0%E6%8D%AE%E5%BA%93">&#x6570;&#x636E;&#x5E93;</h2>
+        <p>&#x5728; <code>app\model</code> &#x521B;&#x5EFA;&#x7EE7;&#x627F; <code>think.Model</code>&#x7684;&#x7C7B;&#x521B;&#x5EFA;<br>
+            &#x6A21;&#x578B;&#x5FC5;&#x987B;&#x5728;&#x6570;&#x636E;&#x5E93;&#x6709;&#x5BF9;&#x5E94;&#x7684;&#x8868;&#xFF0C;&#x4E14;&#x6A21;&#x578B;&#x7C7B;&#x8981;&#x4F7F;&#x7528;&#x9A7C;&#x5CF0;&#x547D;&#x540D;&#x6CD5;&#xFF0C;&#x4EE5;&#x786E;&#x4FDD;&#x80FD;&#x627E;&#x5230;&#x5BF9;&#x5E94;&#x7684;&#x8868;
+        </p>
+        <table>
+            <thead>
+            <tr>
+                <th style="text-align:left">&#x6A21;&#x578B;&#x540D;</th>
+                <th>&#x7EA6;&#x5B9A;&#x5BF9;&#x5E94;&#x6570;&#x636E;&#x8868;&#xFF08;&#x5047;&#x8BBE;&#x6570;&#x636E;&#x5E93;&#x7684;&#x524D;&#x7F00;&#x5B9A;&#x4E49;&#x662F;
+                    think_&#xFF09;
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td style="text-align:left">User</td>
+                <td>think_user</td>
+            </tr>
+            <tr>
+                <td style="text-align:left">UserType</td>
+                <td>think_user_type</td>
+            </tr>
+            </tbody>
+        </table>
+        <h2 class="mume-header" id="%E6%95%B0%E6%8D%AE%E5%BA%93">&#x6570;&#x636E;&#x5E93;</h2>
 
-    <h3 class="mume-header" id="%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C">
-        &#x6570;&#x636E;&#x5E93;&#x64CD;&#x4F5C;</h3>
+        <h3 class="mume-header" id="%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C">
+            &#x6570;&#x636E;&#x5E93;&#x64CD;&#x4F5C;</h3>
 
-    <p>ThinkPHP6 &#x6570;&#x636E;&#x5E93;&#x94FE;&#x5F0F;&#x64CD;&#x4F5C;<br>
-        &#x6570;&#x636E;&#x5E93;&#x63D0;&#x4F9B;&#x7684;&#x94FE;&#x5F0F;&#x64CD;&#x4F5C;&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x4EE5;&#x6709;&#x6548;&#x7684;&#x63D0;&#x9AD8;&#x6570;&#x636E;&#x5B58;&#x53D6;&#x7684;&#x4EE3;&#x7801;&#x6E05;&#x6670;&#x5EA6;&#x548C;&#x5F00;&#x53D1;&#x6548;&#x7387;&#xFF0C;&#x5E76;&#x4E14;&#x652F;&#x6301;&#x6240;&#x6709;&#x7684;CURD&#x64CD;&#x4F5C;
-    </p>
-    <p>&#x5E26;*&#x6807;&#x8BC6;&#x7684;&#x8868;&#x793A;&#x652F;&#x6301;&#x591A;&#x6B21;&#x8C03;&#x7528;</p>
-    <table>
-        <thead>
-        <tr>
-            <th>&#x8FDE;&#x8D2F;&#x64CD;&#x4F5C;</th>
-            <th>&#x4F5C;&#x7528;</th>
-            <th>&#x652F;&#x6301;&#x7684;&#x53C2;&#x6570;&#x7C7B;&#x578B;</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>where*</td>
-            <td>&#x7528;&#x4E8E;AND&#x67E5;&#x8BE2;</td>
-            <td>&#x5B57;&#x7B26;&#x4E32;&#x3001;&#x6570;&#x7EC4;&#x548C;&#x5BF9;&#x8C61;</td>
-        </tr>
-        <tr>
-            <td>table</td>
-            <td>
-                &#x7528;&#x4E8E;&#x5B9A;&#x4E49;&#x8981;&#x64CD;&#x4F5C;&#x7684;&#x6570;&#x636E;&#x8868;&#x540D;&#x79F0;
-            </td>
-            <td>&#x5B57;&#x7B26;&#x4E32;&#x548C;&#x6570;&#x7EC4;</td>
-        </tr>
-        <tr>
-            <td>name</td>
-            <td>
-                &#x7528;&#x4E8E;&#x5B9A;&#x4E49;&#x8981;&#x64CD;&#x4F5C;&#x7684;&#x6570;&#x636E;&#x8868;&#x540D;&#x79F0;
-            </td>
-            <td>&#x5B57;&#x7B26;&#x4E32;</td>
-        </tr>
-        <tr>
-            <td>field*</td>
-            <td>&#x7528;&#x4E8E;&#x5B9A;&#x4E49;&#x8981;&#x67E5;&#x8BE2;&#x7684;&#x5B57;&#x6BB5;&#xFF08;&#x652F;&#x6301;&#x5B57;&#x6BB5;&#x6392;&#x9664;&#xFF09;</td>
-            <td>&#x5B57;&#x7B26;&#x4E32;&#x548C;&#x6570;&#x7EC4;</td>
-        </tr>
-        <tr>
-            <td>order*</td>
-            <td>&#x7528;&#x4E8E;&#x5BF9;&#x7ED3;&#x679C;&#x6392;&#x5E8F;</td>
-            <td>&#x5B57;&#x7B26;&#x4E32;&#x548C;&#x6570;&#x7EC4;</td>
-        </tr>
-        <tr>
-            <td>limit</td>
-            <td>&#x7528;&#x4E8E;&#x9650;&#x5236;&#x67E5;&#x8BE2;&#x7ED3;&#x679C;&#x6570;&#x91CF;</td>
-            <td>&#x5B57;&#x7B26;&#x4E32;&#x548C;&#x6570;&#x5B57;</td>
-        </tr>
-        <tr>
-            <td>page</td>
-            <td>&#x7528;&#x4E8E;&#x67E5;&#x8BE2;&#x5206;&#x9875;&#xFF08;&#x5185;&#x90E8;&#x4F1A;&#x8F6C;&#x6362;&#x6210;limit&#xFF09;</td>
-            <td>&#x5B57;&#x7B26;&#x4E32;&#x548C;&#x6570;&#x5B57;</td>
-        </tr>
-        </tbody>
-    </table>
-
+        <p>ThinkPHP6 &#x6570;&#x636E;&#x5E93;&#x94FE;&#x5F0F;&#x64CD;&#x4F5C;<br>
+            &#x6570;&#x636E;&#x5E93;&#x63D0;&#x4F9B;&#x7684;&#x94FE;&#x5F0F;&#x64CD;&#x4F5C;&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x4EE5;&#x6709;&#x6548;&#x7684;&#x63D0;&#x9AD8;&#x6570;&#x636E;&#x5B58;&#x53D6;&#x7684;&#x4EE3;&#x7801;&#x6E05;&#x6670;&#x5EA6;&#x548C;&#x5F00;&#x53D1;&#x6548;&#x7387;&#xFF0C;&#x5E76;&#x4E14;&#x652F;&#x6301;&#x6240;&#x6709;&#x7684;CURD&#x64CD;&#x4F5C;
+        </p>
+        <p>&#x5E26;*&#x6807;&#x8BC6;&#x7684;&#x8868;&#x793A;&#x652F;&#x6301;&#x591A;&#x6B21;&#x8C03;&#x7528;</p>
+        <table>
+            <thead>
+            <tr>
+                <th>&#x8FDE;&#x8D2F;&#x64CD;&#x4F5C;</th>
+                <th>&#x4F5C;&#x7528;</th>
+                <th>&#x652F;&#x6301;&#x7684;&#x53C2;&#x6570;&#x7C7B;&#x578B;</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>where*</td>
+                <td>&#x7528;&#x4E8E;AND&#x67E5;&#x8BE2;</td>
+                <td>&#x5B57;&#x7B26;&#x4E32;&#x3001;&#x6570;&#x7EC4;&#x548C;&#x5BF9;&#x8C61;</td>
+            </tr>
+            <tr>
+                <td>table</td>
+                <td>
+                    &#x7528;&#x4E8E;&#x5B9A;&#x4E49;&#x8981;&#x64CD;&#x4F5C;&#x7684;&#x6570;&#x636E;&#x8868;&#x540D;&#x79F0;
+                </td>
+                <td>&#x5B57;&#x7B26;&#x4E32;&#x548C;&#x6570;&#x7EC4;</td>
+            </tr>
+            <tr>
+                <td>name</td>
+                <td>
+                    &#x7528;&#x4E8E;&#x5B9A;&#x4E49;&#x8981;&#x64CD;&#x4F5C;&#x7684;&#x6570;&#x636E;&#x8868;&#x540D;&#x79F0;
+                </td>
+                <td>&#x5B57;&#x7B26;&#x4E32;</td>
+            </tr>
+            <tr>
+                <td>field*</td>
+                <td>&#x7528;&#x4E8E;&#x5B9A;&#x4E49;&#x8981;&#x67E5;&#x8BE2;&#x7684;&#x5B57;&#x6BB5;&#xFF08;&#x652F;&#x6301;&#x5B57;&#x6BB5;&#x6392;&#x9664;&#xFF09;</td>
+                <td>&#x5B57;&#x7B26;&#x4E32;&#x548C;&#x6570;&#x7EC4;</td>
+            </tr>
+            <tr>
+                <td>order*</td>
+                <td>&#x7528;&#x4E8E;&#x5BF9;&#x7ED3;&#x679C;&#x6392;&#x5E8F;</td>
+                <td>&#x5B57;&#x7B26;&#x4E32;&#x548C;&#x6570;&#x7EC4;</td>
+            </tr>
+            <tr>
+                <td>limit</td>
+                <td>&#x7528;&#x4E8E;&#x9650;&#x5236;&#x67E5;&#x8BE2;&#x7ED3;&#x679C;&#x6570;&#x91CF;</td>
+                <td>&#x5B57;&#x7B26;&#x4E32;&#x548C;&#x6570;&#x5B57;</td>
+            </tr>
+            <tr>
+                <td>page</td>
+                <td>&#x7528;&#x4E8E;&#x67E5;&#x8BE2;&#x5206;&#x9875;&#xFF08;&#x5185;&#x90E8;&#x4F1A;&#x8F6C;&#x6362;&#x6210;limit&#xFF09;</td>
+                <td>&#x5B57;&#x7B26;&#x4E32;&#x548C;&#x6570;&#x5B57;</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
 </body>
 </html>
