@@ -392,7 +392,7 @@ html body {
     font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
     font-size: 16px;
     line-height: 1.6;
-    color: #333;
+    color: white;
     background-color: #fff;
     overflow: initial;
     box-sizing: border-box;
@@ -407,7 +407,7 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
     line-height: 1.2;
     margin-top: 1em;
     margin-bottom: 16px;
-    color: #000
+    color: #f5f5f5
 }
 
 html body h1 {
@@ -455,7 +455,7 @@ html body h6 {
 }
 
 html body strong {
-    color: #000
+    color: #f5f5f5
 }
 
 html body del {
@@ -564,8 +564,8 @@ html body table {
 }
 
 html body table th {
-    font-weight: bold;
-    color: #000
+    font-weigFht: bold;
+    color: #f5f5f5
 }
 
 html body table td, html body table th {
@@ -668,7 +668,7 @@ html body kbd {
     }
 
     html body h1, html body h2, html body h3, html body h4, html body h5, html body h6 {
-        color: #000;
+        color: #f5f5f5;
         page-break-after: avoid
     }
 
